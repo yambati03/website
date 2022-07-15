@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-zinc-800 bg-zinc-100 duration-150;
+  }
+
+  html.dark {
+    @apply text-zinc-100 bg-zinc-800;
+  }
+
+  h2 {
+    @apply font-bold text-lg;
+  }
+
+  code {
+    @apply bg-zinc-200 dark:bg-zinc-700 px-[0.4em] py-[0.2em] rounded-md text-sm
+  }
+}
