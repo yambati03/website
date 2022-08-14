@@ -14,7 +14,7 @@ export default function BlogPost(props: Post) {
   return (
     <>
       <Head>
-        <title>{`${props.frontmatter.title}`}</title>
+        <title>{props.frontmatter.title}</title>
       </Head>
       <div className='m-8 flex flex-col lg:flex-row space-y-4 lg:space-y-0'>
         <Link href='/blog' passHref>

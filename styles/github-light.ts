@@ -1,7 +1,6 @@
-const github = {
+const githubLight = {
   'code[class*="language-"]': {
-    color: "#c9d1d9",
-    textShadow: "0 1px rgba(0, 0, 0, 0.3)",
+    color: "#24292f",
     fontFamily:
       "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
     direction: "ltr",
@@ -19,8 +18,7 @@ const github = {
     hyphens: "none",
   },
   'pre[class*="language-"]': {
-    color: "#c9d1d9",
-    textShadow: "0 1px rgba(0, 0, 0, 0.3)",
+    color: "#24292f",
     fontFamily:
       "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
     direction: "ltr",
@@ -40,10 +38,10 @@ const github = {
     margin: ".5em 0",
     overflow: "auto",
     borderRadius: "0.3em",
-    background: "#18181b",
+    background: "#e4e4e7",
   },
   ':not(pre) > code[class*="language-"]': {
-    background: "#18181b",
+    background: "#e4e4e7",
     padding: ".1em",
     borderRadius: ".3em",
   },
@@ -60,22 +58,22 @@ const github = {
     color: "#7C7C7C",
   },
   punctuation: {
-    color: "#79c0ff",
+    color: "#0550ae",
   },
   ".namespace": {
     Opacity: ".7",
   },
   property: {
-    color: "#79c0ff",
+    color: "#0550ae",
   },
   keyword: {
-    color: "#ff7b72",
+    color: "#cf222e",
   },
   tag: {
     color: "#A8FF60",
   },
   "class-name": {
-    color: "#c9d1d9",
+    color: "#24292f",
   },
   boolean: {
     color: "#99CC99",
@@ -96,7 +94,7 @@ const github = {
     color: "#A8FF60",
   },
   "attr-name": {
-    color: "#79c0ff",
+    color: "#0550ae",
   },
   string: {
     color: "#a5d6ff",
@@ -111,10 +109,10 @@ const github = {
     color: "#A8FF60",
   },
   variable: {
-    color: "#C6C5FE",
+    color: "#c9d1d9",
   },
   operator: {
-    color: "#79c0ff",
+    color: "#0550ae",
   },
   entity: {
     color: "#FFFFB6",
@@ -136,7 +134,7 @@ const github = {
     color: "#F9EE98",
   },
   function: {
-    color: "#c9d1d9",
+    color: "#8250df",
   },
   regex: {
     color: "#E9C062",
@@ -153,4 +151,4 @@ const github = {
   },
 } as { [key: string]: React.CSSProperties };
 
-export default github;
+export default githubLight;

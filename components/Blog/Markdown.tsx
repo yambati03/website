@@ -1,8 +1,10 @@
+import { useTheme } from "next-themes";
 import * as React from "react";
 import ReactMarkdown from "react-markdown";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import github from "../../styles/github";
-import ExternalLink from "../ExternalLink";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import githubDark from "../../styles/github-dark";
+import githubLight from "../../styles/github-light";
+import Code from "../Code";
 import SmartLink from "../SmartLink";
 
 export interface Props {
@@ -10,6 +12,8 @@ export interface Props {
 }
 
 function Markdown(props: Props) {
+  const { theme, setTheme } = useTheme();
+
   return (
     <ReactMarkdown
       components={{
@@ -17,7 +21,7 @@ function Markdown(props: Props) {
           const match = /language-(\w+)/.exec(className || "");
           return !inline && match ? (
             <SyntaxHighlighter
-              style={github}
+              style={theme === "dark" ? githubDark : githubLight}
               language={match[1]}
               PreTag='div'
               customStyle={{ padding: 10 }}
@@ -28,9 +32,7 @@ function Markdown(props: Props) {
               {String(children).replace(/\n$/, "")}
             </SyntaxHighlighter>
           ) : (
-            <code className={className} {...props}>
-              {children}
-            </code>
+            <Code>{children}</Code>
           );
         },
         a: ({ href, children, ...props }) => (

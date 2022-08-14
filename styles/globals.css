@@ -17,7 +17,18 @@
     @apply font-bold text-lg;
   }
 
-  code {
-    @apply bg-zinc-200 dark:bg-zinc-700 px-[0.4em] py-[0.2em] rounded-md text-sm
+  ol {
+    counter-reset: counter;
+    @apply list-none;
+  }
+
+  ol li {
+    counter-increment: counter;
+    @apply flex mt-2;
+  }
+
+  ol li::before {
+    content: counter(counter) ".";
+    @apply text-indigo-500 dark:text-indigo-400 font-bold mr-4;
   }
 }
