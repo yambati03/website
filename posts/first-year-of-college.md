@@ -23,7 +23,10 @@ It was great while it lasted.
 
 ## Everything Else
 
-I realized a few certainties:
+The rest of the year had bouts of excitement, but I'd be lying if I said it was all *exciting*. But, a rut isn't necessarily bad.
+It just meant that I was getting the hand of this whole college thing.
+
+Here's some things that I learned.
 
 1. **It's incredibly important to compartmentalize.** During my spring semester, I interned part-time
    at a local startup. Let's be clear: many students do this. But admittedly, I could've done it better. Sometimes,

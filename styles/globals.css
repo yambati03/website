@@ -31,4 +31,8 @@
     content: counter(counter) ".";
     @apply text-indigo-500 dark:text-indigo-400 font-bold mr-4;
   }
+
+  blockquote {
+    @apply bg-zinc-200 dark:bg-zinc-700 p-4 rounded
+  }
 }
